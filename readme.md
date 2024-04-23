@@ -22,3 +22,5 @@ We can use `ENTRYPOINT` in the Dockerfile to append the command , so that we don
 docker container run -it --rm utility-container -v $(pwd):/app init
 docker container run -it --rm utility-container $(pwd):/app install express
 ```
+
+Here, we are using `-it` to run the container in interactive mode and `--rm` to remove the container after it exits. We are mounting the current directory to `/app` in the container using `-v` flag.
